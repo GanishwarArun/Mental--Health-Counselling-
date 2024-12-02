@@ -3,7 +3,7 @@ import express from 'express';
 const router = express.Router();
 
 // POST /api/login - Handle user login (Universal login)
-router.post('/', (req, res) => {
+router.post('login/', (req, res) => {
   const { email, password } = req.body;
 
   // Check if email and password are provided
