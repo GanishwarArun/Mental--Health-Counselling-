@@ -25,7 +25,8 @@ app.use(express.json());
 
 // ✅ Updated CORS functionality to support Netlify URL
 const allowedOrigins = [
-  process.env.CLIENT_URL || 'http://localhost:5000',
+  'https://strong-heliotrope-33def0.netlify.app',
+   'http://localhost:5173'
   // 'https://strong-heliotrope-33def0.netlify.app' // ✅ Add Netlify URL to allowed origins
 ];
 
