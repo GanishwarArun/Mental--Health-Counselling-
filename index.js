@@ -27,6 +27,7 @@ app.use(express.json());
 const allowedOrigins = [
   'https://strong-heliotrope-33def0.netlify.app',
    'http://localhost:5173'
+  //  'https://online-mental-app-be.onrender.com'
   // 'https://strong-heliotrope-33def0.netlify.app' // ✅ Add Netlify URL to allowed origins
 ];
 
