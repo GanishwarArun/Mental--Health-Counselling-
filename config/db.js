@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-// Mongoose மாடலை மீண்டும் வரையறுக்காமல் அதே மாடலை பயன்படுத்துவோம்
+// Reuse the existing User model if already defined, otherwise define a new model
 const User = mongoose.models.User || mongoose.model('User', new mongoose.Schema({
   name: {
     type: String,
@@ -18,6 +18,27 @@ const User = mongoose.models.User || mongoose.model('User', new mongoose.Schema(
 }));
 
 export default User;
+
+// import mongoose from 'mongoose';
+
+// // Mongoose மாடலை மீண்டும் வரையறுக்காமல் அதே மாடலை பயன்படுத்துவோம்
+// const User = mongoose.models.User || mongoose.model('User', new mongoose.Schema({
+//   name: {
+//     type: String,
+//     required: true,
+//   },
+//   email: {
+//     type: String,
+//     required: true,
+//     unique: true,
+//   },
+//   password: {
+//     type: String,
+//     required: true,
+//   },
+// }));
+
+// export default User;
 
 // import mongoose from 'mongoose';
 

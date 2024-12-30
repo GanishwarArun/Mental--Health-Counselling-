@@ -157,4 +157,3 @@ router.put('/user/:id', async (req, res) => {
 });
 
 export default router;
-
